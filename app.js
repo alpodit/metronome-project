@@ -113,5 +113,5 @@ function playClick(){
     count++;
 }
 
-const metronome = new Timer(playClick, 60000/bpm , {immediate: false});
+const metronome = new Timer(playClick, 60000/bpm , {immediate: true});
 
