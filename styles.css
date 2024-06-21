@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Fjalla One, sans-serif;
+    color: #333;
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.metronome {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 375px;
+    justify-content: space-between;
+}
+.bpm-display {
+    width: 100%;
+    text-align: center;
+    color: rgb(211, 78, 104);
+    font-weight: bold;
+}
+
+.bpm-display .tempo{
+    font-size: 6em;
+    
+}
+
+.tempo-text{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.tempo-settings {
+    display: flex;
+    justify-content:space-between;
+}
+
+.tempo-settings .adjust-tempo-btn{
+    width: 45px;
+    height: 45px;
+    font-size: 36px;
+    border-radius: 50%;
+    border: 1px solid rgb(211, 78, 104);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tempo-settings .adjust-tempo-btn:hover{
+    background-color: rgb(211, 78, 104);
+    color: #fff;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 72%;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+}
+
+input[type="range"]:focus{
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(211, 78, 104);
+    cursor: pointer;
+    margin-top: -12px;
+}
+
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(211, 78, 104);
+    cursor: pointer;
+    border: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 1px;
+    background: rgb(211, 78, 104);
+}
+
+input[type="range"]::-moz-range-track{
+    width: 100%;
+    height: 1px;
+    background: rgb(211, 78, 104);
+}
+
+
+
+.start-stop{
+    width: 4em;
+    height: 4em;
+    font-size: 1.2em;
+    text-align: center;
+    background: rgb(211, 78, 104);
+    border-radius: 50%;
+    color: #fff;
+    line-height: 4.1em;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.start-stop:hover{
+    background: #333;
+}
+
+.measures{
+    display: flex;
+    justify-content: center;
+}
+
+.measures .stepper{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1px solid rgb(188, 126, 138);
+    text-align: center;
+    margin: 0 7px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.measures .stepper:hover{
+    background-color: rgb(188, 126, 138);
+    color: #fff;
+}
+
+.measures .add-beats{
+    line-height: 2em;
+}
+
+.measures .subtract-beats{
+    line-height: 2em;
+}
+
+.beats-per-measure-text {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.measure-count {
+    font-size: 1.5em;
+}
+
+.measures {
+    margin-top: 30px;
+}
