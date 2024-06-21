@@ -92,14 +92,11 @@ startStopButton.addEventListener('click', () => {
 });
 
 function updateTempoDisplay() {
-    metronome.stop();
     tempoDisplay.textContent = bpm;
     tempoSlider.value = bpm;
     tempoText.textContent = getTempoName(bpm);
     count = 0;
     metronome.timeInterval = 60000/bpm;
-    if (isRunning)
-    metronome.start();
 }
 
 function playClick(){
